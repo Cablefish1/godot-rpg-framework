@@ -1,6 +1,8 @@
 extends Node
 class_name Health
 
+signal died
+
 @export var max_hit_points : int = 0
 @export var hit_points : int = 0
 

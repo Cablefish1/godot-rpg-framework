@@ -1,0 +1,13 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1750067743
+battle_screen.gd::GDScript::7022223283424220801::1750067477::0::1::::<>Control<><>0<>0<><>::
+battle_screen.tscn::PackedScene::6248274977826224086::1750067477::0::1::::<><><>0<>0<><>::uid://ct8k6lsvwsile::::res://Player.tscn<>uid://c7bu8ygvv77ej::::res://battle_screen.gd
+icon.svg::CompressedTexture2D::4903594438952159041::1750067477::1750067745::1::::<><><>0<>0<>461e19a4c37b1d8d42fa7acbebd7818e<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+player.gd::GDScript::1703808931581986135::1750067477::0::1::::Player<>Node2D<><>0<>0<><>::
+Player.tscn::PackedScene::6175216998479097898::1750067477::0::1::::<><><>0<>0<><>::uid://yjlqpx7s07qp::::res://player.gd<>uid://cb4lqpqtffgrp::::res://icon.svg<>uid://dniu33kc5gxuu::::res://Components/health.tscn<>uid://dch8u2u6inw30::::res://Components/Stats/stat_block.tscn
+::res://Components/::1750067477
+health.gd::GDScript::3055390350285218716::1750067477::0::1::::Health<>Node<><>0<>0<><>::
+health.tscn::PackedScene::8089497868723940968::1750067477::0::1::::<><><>0<>0<><>::uid://bjsb3ktkluspg::::res://Components/health.gd
+::res://Components/Stats/::1750067477
+statblock.gd::GDScript::5977165908729439089::1750067477::0::1::::StatBlock<>Node<><>0<>0<><>::
+stat_block.tscn::PackedScene::7316131209719446001::1750067477::0::1::::<><><>0<>0<><>::uid://crfnbw6ny4fl6::::res://Components/Stats/statblock.gd

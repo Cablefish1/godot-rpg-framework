@@ -1,0 +1,4 @@
+res://battle_screen.tscn
+res://Components/health.gd
+res://player.gd
+res://Components/Stats/statblock.gd
