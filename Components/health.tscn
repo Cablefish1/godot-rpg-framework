@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dniu33kc5gxuu"]
+
+[ext_resource type="Script" uid="uid://bjsb3ktkluspg" path="res://Components/health.gd" id="1_ledv5"]
+
+[node name="Health" type="Node"]
+script = ExtResource("1_ledv5")
+vulnurabilities = Array[String]([""])

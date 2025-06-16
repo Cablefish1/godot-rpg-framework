@@ -1,0 +1,16 @@
+[gd_scene load_steps=5 format=3 uid="uid://ct8k6lsvwsile"]
+
+[ext_resource type="Script" uid="uid://yjlqpx7s07qp" path="res://player.gd" id="1_kpjcp"]
+[ext_resource type="Texture2D" uid="uid://cb4lqpqtffgrp" path="res://icon.svg" id="3_kne1u"]
+[ext_resource type="PackedScene" uid="uid://dniu33kc5gxuu" path="res://Components/health.tscn" id="4_cxr5p"]
+[ext_resource type="PackedScene" uid="uid://dch8u2u6inw30" path="res://Components/Stats/stat_block.tscn" id="4_e80uo"]
+
+[node name="Player" type="Node2D"]
+script = ExtResource("1_kpjcp")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("3_kne1u")
+
+[node name="StatBlock" parent="." instance=ExtResource("4_e80uo")]
+
+[node name="Health" parent="." instance=ExtResource("4_cxr5p")]

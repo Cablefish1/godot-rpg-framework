@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://cvayf8prw0o2a"]
+
+[ext_resource type="PackedScene" uid="uid://ct8k6lsvwsile" path="res://Player.tscn" id="1_3047d"]
+[ext_resource type="Script" uid="uid://c7bu8ygvv77ej" path="res://battle_screen.gd" id="1_duuuk"]
+
+[node name="BattleScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_duuuk")
+
+[node name="Player" parent="." instance=ExtResource("1_3047d")]
+position = Vector2(425, 225)
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 736.0
+offset_top = 130.0
+offset_right = 861.0
+offset_bottom = 184.0
+text = "Damage player
+2"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+
+[editable path="Player"]
