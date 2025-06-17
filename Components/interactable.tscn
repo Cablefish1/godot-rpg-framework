@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://ciayiffl6mavw"]
+
+[ext_resource type="Script" uid="uid://c0jp7svjrw7c0" path="res://Components/interactable.gd" id="1_wh154"]
+
+[node name="Interactable" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Interactable"
+script = ExtResource("1_wh154")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

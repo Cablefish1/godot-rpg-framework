@@ -1,3 +1,10 @@
-res://entity.tscn
 res://Components/entity.tscn
 res://Components/entity.gd
+res://battle_screen.tscn
+res://credits.txt
+res://skill_check_button.gd
+res://interactable.gd
+res://interactable.tscn
+res://Components/interactable.tscn
+res://entity.gd
+res://Components/health.gd

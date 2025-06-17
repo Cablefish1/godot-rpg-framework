@@ -1,9 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://cvayf8prw0o2a"]
+[gd_scene load_steps=4 format=3 uid="uid://cvayf8prw0o2a"]
 
 [ext_resource type="PackedScene" uid="uid://ct8k6lsvwsile" path="res://Player.tscn" id="1_3047d"]
 [ext_resource type="Script" uid="uid://c7bu8ygvv77ej" path="res://battle_screen.gd" id="1_duuuk"]
+[ext_resource type="PackedScene" uid="uid://j7ldjhiddlpt" path="res://entity.tscn" id="3_mkoka"]
 
-[node name="BattleScreen" type="Control"]
+[node name="Game Screen" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -31,6 +32,9 @@ offset_right = 861.0
 offset_bottom = 184.0
 text = "Damage player
 2"
+
+[node name="Entity" parent="." instance=ExtResource("3_mkoka")]
+position = Vector2(199, 278)
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 

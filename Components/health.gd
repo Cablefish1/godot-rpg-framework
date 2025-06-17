@@ -48,5 +48,7 @@ func take_damage(amount : int, type : String):
 	
 	
 	
-	
+func get_interactions() -> Array:
+	#Her er jeg nået til!
+	return []
 	
