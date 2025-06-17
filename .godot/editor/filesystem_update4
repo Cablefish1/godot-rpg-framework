@@ -1,4 +1,3 @@
-res://battle_screen.tscn
-res://Components/health.gd
-res://player.gd
-res://Components/Stats/statblock.gd
+res://entity.tscn
+res://Components/entity.tscn
+res://Components/entity.gd
