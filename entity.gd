@@ -18,6 +18,12 @@ func get_component(component_class_name: String) -> Node:
 	print_debug("Component '%s' not found on entity %s" % [component_class_name, name])
 	return null
 
+#Der skal laves to funktioner mere.
+# call_components der fyrer signals til alle componenter der er interesseret i dem.
+# has_component der tester om en entity har en component til brug.
+
+# Scriptet her skal lave en context-meny.
+# Jeg tænker lidt at dele den op mellem skills der kan bruges, ting man kan kan gøre med NPC'er osv så context menu bliver lidt organiseret.
 func build_context_menu() -> Array:
 	var menu_options : = []
 	for component in get_children():
