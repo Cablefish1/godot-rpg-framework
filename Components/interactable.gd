@@ -1,5 +1,14 @@
 extends Button
 
+class_name Interactable
 
-func _on_pressed() -> void:
-	pass # Replace with function body.
+signal request_context_menu(options)
+
+func _ready():
+	pass
+
+#func _on_pressed():
+#	get_parent().build_context_menu()
+	
+func _on_pressed():
+	emit_signal("request_context_menu", get_parent().build_menu_options())

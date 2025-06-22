@@ -2,6 +2,6 @@
 
 [ext_resource type="Script" uid="uid://bjsb3ktkluspg" path="res://Components/health.gd" id="1_ledv5"]
 
-[node name="Health" type="Node"]
+[node name="Health" type="Node" groups=["Health"]]
 script = ExtResource("1_ledv5")
 vulnurabilities = Array[String]([""])

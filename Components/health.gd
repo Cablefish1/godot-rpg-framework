@@ -49,7 +49,9 @@ func take_damage(amount : int, type : String):
 
 
 func get_interactions() -> Array:
-	# Her er jeg nået til!
-	# Det her script skal bruges til at bygge en context menu knap der kan referere tilbage til de funktioner i scriptet knapperne skal aktivere
-	return []
+	return [{
+		"name" : "Bash",
+		"callback" : Callable(self, "take_damage"),
+		"enabled" : true
+	}]
 	

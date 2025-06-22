@@ -2,5 +2,12 @@
 
 [ext_resource type="Script" uid="uid://dy8k7i1nfcanf" path="res://UI/context_menu.gd" id="1_4l88r"]
 
-[node name="ContextMenu" type="PanelContainer"]
+[node name="ContextMenu" type="PopupPanel"]
+visible = true
 script = ExtResource("1_4l88r")
+
+[node name="Options" type="VBoxContainer" parent="."]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 96.0
+offset_bottom = 96.0

@@ -1,4 +1,9 @@
 res://UI/Context Menu.tscn
+res://Components/interactable.gd
+res://game_screen.tscn
+res://Components/entity.tscn
+res://Components/interactable.tscn
+res://Components/health.tscn
+res://Components/entity.gd
 res://UI/context_menu.gd
-res://entity.gd
-res://Components/health.gd
+res://credits.txt

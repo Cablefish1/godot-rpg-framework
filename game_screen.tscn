@@ -1,0 +1,55 @@
+[gd_scene load_steps=8 format=3 uid="uid://cvayf8prw0o2a"]
+
+[ext_resource type="Script" uid="uid://c7bu8ygvv77ej" path="res://battle_screen.gd" id="1_j7yda"]
+[ext_resource type="PackedScene" uid="uid://ct8k6lsvwsile" path="res://Player.tscn" id="2_lxtpa"]
+[ext_resource type="PackedScene" uid="uid://j7ldjhiddlpt" path="res://Components/entity.tscn" id="3_3vj30"]
+[ext_resource type="PackedScene" uid="uid://ciayiffl6mavw" path="res://Components/interactable.tscn" id="4_6mti6"]
+[ext_resource type="Texture2D" uid="uid://ccln0dsmlqf3v" path="res://Sprites/icon_door.png" id="5_3vj30"]
+[ext_resource type="PackedScene" uid="uid://dniu33kc5gxuu" path="res://Components/health.tscn" id="5_oymjd"]
+[ext_resource type="PackedScene" uid="uid://i7yy28vywiu2" path="res://UI/Context Menu.tscn" id="6_lxtpa"]
+
+[node name="Game Screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_j7yda")
+
+[node name="Player" parent="." instance=ExtResource("2_lxtpa")]
+position = Vector2(425, 225)
+
+[node name="StatBlock" parent="Player" index="1"]
+strength = 8
+perception = 8
+constitution = 8
+agility = 8
+intelligence = 8
+charisma = 8
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 736.0
+offset_top = 130.0
+offset_right = 861.0
+offset_bottom = 184.0
+text = "Damage player
+2"
+
+[node name="Door" parent="." instance=ExtResource("3_3vj30")]
+position = Vector2(644, 295)
+entity_name = "Door"
+
+[node name="Interactable" parent="Door" instance=ExtResource("4_6mti6")]
+text = "Door"
+icon = ExtResource("5_3vj30")
+
+[node name="Health" parent="Door" instance=ExtResource("5_oymjd")]
+
+[node name="ContextMenu" parent="." instance=ExtResource("6_lxtpa")]
+visible = false
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+
+[editable path="Player"]

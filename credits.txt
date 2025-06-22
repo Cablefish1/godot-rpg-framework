@@ -1,2 +1,5 @@
 Icons bought from:
 	https://cazwolf.itch.io/caz-pixel-1
+Icons used for free:
+	https://pixel-boy.itch.io/icon-godot-node
+	
