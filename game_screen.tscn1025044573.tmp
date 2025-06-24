@@ -37,7 +37,6 @@ text = "Door"
 icon = ExtResource("5_3vj30")
 
 [node name="Health" parent="Door" instance=ExtResource("5_oymjd")]
-hit_points = 8
 vulnurabilities = Array[String](["Fire"])
 
 [node name="ContextMenu" parent="." instance=ExtResource("6_lxtpa")]

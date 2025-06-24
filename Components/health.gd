@@ -41,8 +41,9 @@ func take_damage(amount : int, type : String):
 		return
 	if resistances.has(type):
 		hit_points = hit_points - floor(amount / 2)
-	print("Target took damage")
-	if hit_points >= 0:
+	print("Target took "+str(amount)+" "+type+" damage")
+	print(str(hit_points)+" Hit Points left")
+	if hit_points <= 0:
 		emit_signal("died")
 		push_warning("Target is dead!")
 
@@ -52,6 +53,13 @@ func get_interactions() -> Array:
 	return [{
 		"name" : "Bash",
 		"callback" : Callable(self, "take_damage"),
+		"arguments": [5],
+		"enabled" : true
+	},
+	{
+		"name" : "Burn",
+		"callback" : Callable(self, "take_damage"),
+		"arguments": [2, "Fire"],
 		"enabled" : true
 	}]
 	

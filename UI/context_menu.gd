@@ -16,7 +16,15 @@ func show_menu(options : Array):
 		var button = Button.new()
 		button.text = option.name
 		button.disabled = not option.enabled
-		button.connect("pressed", option.callback)
+		#Handle arguments if present:
+		if option.has("callback") and option.callback is Callable:
+			var callable = option.callback
+			if option.has("arguments") and typeof(option.arguments) == TYPE_ARRAY:
+				callable = callable.bindv(option.arguments)
+				
+			button.pressed.connect(callable)
+		else:
+			button.connect("pressed", option.callback)
 		$Options.add_child(button)
 	popup()
 	position = get_viewport().get_mouse_position()

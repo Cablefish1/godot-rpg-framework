@@ -1,0 +1,75 @@
+{
+	"categories": [
+		{
+			"uuid": "6a7fd4c0-fde7-4917-86e4-650ca922472b",
+			"title": "Task",
+			"color": "70bafa"
+		}
+	],
+	"stages": [
+		{
+			"uuid": "527e66fe-8301-4f59-985c-527cf8519000",
+			"title": "Todo",
+			"tasks": [
+				"b95265d0-5637-4c56-87c4-f0bca102a178",
+				"8f2a3a62-df09-4009-af22-080a3d64bc22",
+				"f65de741-03e9-4d98-8ccf-154a330149aa"
+			]
+		},
+		{
+			"uuid": "41355128-ed8b-4aaf-a22c-d859d168fd09",
+			"title": "Doing",
+			"tasks": []
+		},
+		{
+			"uuid": "9c4db737-2867-43c1-a197-1834611a7185",
+			"title": "Done",
+			"tasks": [
+				"ffae0631-966f-4c31-8ba5-d51d3b176694"
+			]
+		}
+	],
+	"tasks": [
+		{
+			"uuid": "b95265d0-5637-4c56-87c4-f0bca102a178",
+			"title": "Skill rolls",
+			"description": "",
+			"category": "6a7fd4c0-fde7-4917-86e4-650ca922472b",
+			"steps": []
+		},
+		{
+			"uuid": "8f2a3a62-df09-4009-af22-080a3d64bc22",
+			"title": "Player as an Entity",
+			"description": "",
+			"category": "6a7fd4c0-fde7-4917-86e4-650ca922472b",
+			"steps": []
+		},
+		{
+			"uuid": "ffae0631-966f-4c31-8ba5-d51d3b176694",
+			"title": "Interactables with arguments",
+			"description": "",
+			"category": "6a7fd4c0-fde7-4917-86e4-650ca922472b",
+			"steps": []
+		},
+		{
+			"uuid": "f65de741-03e9-4d98-8ccf-154a330149aa",
+			"title": "Bug: take_damage without the type argument?",
+			"description": "",
+			"category": "6a7fd4c0-fde7-4917-86e4-650ca922472b",
+			"steps": []
+		}
+	],
+	"layout": {
+		"columns": [
+			[
+				"527e66fe-8301-4f59-985c-527cf8519000"
+			],
+			[
+				"41355128-ed8b-4aaf-a22c-d859d168fd09"
+			],
+			[
+				"9c4db737-2867-43c1-a197-1834611a7185"
+			]
+		]
+	}
+}
