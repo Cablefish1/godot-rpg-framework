@@ -34,32 +34,44 @@ func calculate_health():
 	
 
 
-func take_damage(amount : int, type : String = "Normal"):
+func take_damage(amount : int, type : String = ""):
 	if vulnurabilities.has(type):
 		hit_points = hit_points - (amount * 2)
 	if immunities.has(type):
 		return
 	if resistances.has(type):
 		hit_points = hit_points - floor(amount / 2)
+	else:
+		hit_points = hit_points - amount
 	print("Target took "+str(amount)+" "+type+" damage")
 	print(str(hit_points)+" Hit Points left")
 	if hit_points <= 0:
-		emit_signal("died")
 		push_warning("Target is dead!")
+		emit_signal("died")
 
+func NPC_attacked():
+	print("initiate combat logic")
 
 
 func get_interactions() -> Array:
-	return [{
-		"name" : "Bash",
-		"callback" : Callable(self, "take_damage"),
-		"arguments": [5, "Normal"],
-		"enabled" : true
-	},
-	{
-		"name" : "Burn",
-		"callback" : Callable(self, "take_damage"),
-		"arguments": [2, "Fire"],
-		"enabled" : true
-	}]
+	if get_parent().entity_type == "NPC": #target is alive
+		return [{
+			"name" : "Attack",
+			"callback" : Callable(self, "NPC_attacked"),
+			"arguments": [],
+			"enabled" : true
+		}]
+	else: #target is something else that can be hurt
+		return [{
+			"name" : "Bash",
+			"callback" : Callable(self, "take_damage"),
+			"arguments": [5, "Normal"],
+			"enabled" : true
+		},
+		{
+			"name" : "Burn",
+			"callback" : Callable(self, "take_damage"),
+			"arguments": [2, "Fire"],
+			"enabled" : true
+		}]
 	

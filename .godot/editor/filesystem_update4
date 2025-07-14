@@ -1,10 +1,12 @@
-res://Components/skillbook.tscn
+res://Components/entity.gd
+res://Components/interactable.gd
 res://game_screen.tscn
-res://PlayerCharacter.tscn
 res://Components/entity.tscn
 res://Components/interactable.tscn
 res://UI/Context Menu.tscn
 res://Components/health.tscn
 res://Components/party_character.tscn
 res://Components/Skills/skillbook.tscn
+res://PlayerCharacter.tscn
+res://entities/overworld_npc.tscn
 res://Components/health.gd

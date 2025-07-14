@@ -1,11 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1752428489
+::res://::1752514993
 battle_screen.gd::GDScript/GDScript::7022223283424220801::1750702333::0::1::::<>Control<><>0<>0<><>::
 credits.txt::TextFile/TextFile::-1::1750533645::0::1::::<><><>0<>0<><>::
-game_screen.tscn::PackedScene::6248274977826224086::1752428597::0::1::::<><><>0<>0<><>::uid://c7bu8ygvv77ej::::res://battle_screen.gd<>uid://ct8k6lsvwsile::::res://Player.tscn<>uid://j7ldjhiddlpt::::res://Components/entity.tscn<>uid://ciayiffl6mavw::::res://Components/interactable.tscn<>uid://ccln0dsmlqf3v::::res://Sprites/icon_door.png<>uid://dniu33kc5gxuu::::res://Components/health.tscn<>uid://i7yy28vywiu2::::res://UI/Context Menu.tscn
+game_screen.tscn::PackedScene/PackedScene::6248274977826224086::1752430257::0::1::::<><><>0<>0<><>::uid://c7bu8ygvv77ej::::res://battle_screen.gd<>uid://ct8k6lsvwsile::::res://PlayerCharacter.tscn<>uid://j7ldjhiddlpt::::res://Components/entity.tscn<>uid://ciayiffl6mavw::::res://Components/interactable.tscn<>uid://ccln0dsmlqf3v::::res://Sprites/icon_door.png<>uid://dniu33kc5gxuu::::res://Components/health.tscn<>uid://i7yy28vywiu2::::res://UI/Context Menu.tscn
 icon.svg::CompressedTexture2D/CompressedTexture2D::6609103810336174842::1750099748::1750701459::1::::<><><>0<>0<>d491996e4a5b56b1fc2174def86cd008<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+overworld_npc.tscn::PackedScene::4081214792139304094::1752514834::0::1::::<><><>0<>0<><>::uid://c7egxhhnieaje::::res://Components/entity.gd<>uid://dniu33kc5gxuu::::res://Components/health.tscn<>uid://bsatvtkx74qfl::::res://Components/Skills/skillbook.tscn<>uid://dch8u2u6inw30::::res://Components/Stats/stat_block.tscn<>uid://ciayiffl6mavw::::res://Components/interactable.tscn<>uid://dfhmbbi72aeaq::::res://Sprites/icon_character.png
 player.gd::GDScript/GDScript::1703808931581986135::1750099748::0::1::::Player<>Node2D<><>0<>0<><>::
-Player.tscn::PackedScene/PackedScene::6175216998479097898::1750099748::0::1::::<><><>0<>0<><>::uid://yjlqpx7s07qp::::res://player.gd<>uid://cb4lqpqtffgrp::::res://icon.svg<>uid://dniu33kc5gxuu::::res://Components/health.tscn<>uid://dch8u2u6inw30::::res://Components/Stats/stat_block.tscn
+PlayerCharacter.tscn::PackedScene/PackedScene::6175216998479097898::1752430132::0::1::::<><><>0<>0<><>::uid://yjlqpx7s07qp::::res://player.gd<>uid://c1fq8eeff6j4u::::res://icon.svg<>uid://dniu33kc5gxuu::::res://Components/health.tscn<>uid://dch8u2u6inw30::::res://Components/Stats/stat_block.tscn<>uid://bsatvtkx74qfl::::res://Components/Skills/skillbook.tscn
 README.md::TextFile/TextFile::-1::1751046706::0::1::::<><><>0<>0<><>::
 ::res://addons/::1750701479
 ::res://addons/kanban_tasks/::1750701481
@@ -75,26 +76,28 @@ start.tscn::PackedScene/PackedScene::2692091061628401710::1750701480::0::1::::<>
 autosize_label.gd::GDScript/GDScript::7912999680173541418::1750701480::0::1::::<>Label<><>0<>1<><>::
 task.gd::GDScript/GDScript::8745945234502471197::1750701480::0::1::::<>MarginContainer<><>0<>1<><>::
 task.tscn::PackedScene/PackedScene::5508831843714498441::1750701480::0::1::::<><><>0<>0<><>::res://addons/kanban_tasks/view/task/task.gd<>res://addons/kanban_tasks/edit_label/edit_label.gd<>res://addons/kanban_tasks/view/task/autosize_label.gd<>uid://bwi22eyrmeeet::::res://addons/kanban_tasks/view/details/details.tscn<>uid://dwjg5vyxx4g48::::res://addons/kanban_tasks/view/details/step_holder.tscn<>res://addons/kanban_tasks/expand_button/expand_button.gd
-::res://Components/::1752428489
-entity.gd::GDScript/GDScript::7027547629114479542::1750531445::0::1::::Entity<>Node2D<><>0<>0<><>::
-entity.tscn::PackedScene/PackedScene::698433409065755845::1750705104::0::1::::<><><>0<>0<><>::uid://c7egxhhnieaje::::res://Components/entity.gd
-health.gd::GDScript/GDScript::3055390350285218716::1750705102::0::1::::Health<>Node<><>0<>0<><>::
-health.tscn::PackedScene/PackedScene::8089497868723940968::1750705104::0::1::::<><><>0<>0<><>::uid://bjsb3ktkluspg::::res://Components/health.gd
-interactable.gd::GDScript/GDScript::6547110736713736957::1750531298::0::1::::Interactable<>Button<><>0<>0<><>::
-interactable.tscn::PackedScene/PackedScene::5335823881550556752::1750705104::0::1::::<><><>0<>0<><>::uid://c0jp7svjrw7c0::::res://Components/interactable.gd
-party_character.tscn::PackedScene/PackedScene::7869112374692973249::1751046052::0::1::::<><><>0<>0<><>::uid://j7ldjhiddlpt::::res://Components/entity.tscn<>uid://dniu33kc5gxuu::::res://Components/health.tscn<>uid://dch8u2u6inw30::::res://Components/Stats/stat_block.tscn
-::res://Components/Skills/::1752428489
-skillbook.gd::GDScript::4731683303277903302::1751047268::0::1::::Skillbook<>Node2D<><>0<>0<><>::
-skillbook.tscn::PackedScene::3651012008192882493::1752428489::0::1::::<><><>0<>0<><>::uid://b8ocernsk33n3::::res://Components/Skills/skillbook.gd
-::res://Components/Stats/::1750099748
+::res://Components/::1752514835
+entity.gd::GDScript::7027547629114479542::1752514834::0::1::::Entity<>Node2D<><>0<>0<><>::
+entity.tscn::PackedScene/PackedScene::698433409065755845::1752430132::0::1::::<><><>0<>0<><>::uid://c7egxhhnieaje::::res://Components/entity.gd
+health.gd::GDScript/GDScript::3055390350285218716::1752430068::0::1::::Health<>Node<><>0<>0<><>::
+health.tscn::PackedScene/PackedScene::8089497868723940968::1752430132::0::1::::<><><>0<>0<><>::uid://bjsb3ktkluspg::::res://Components/health.gd
+interactable.gd::GDScript::6547110736713736957::1752514835::0::1::::Interactable<>Button<><>0<>0<><>::
+interactable.tscn::PackedScene/PackedScene::5335823881550556752::1752430132::0::1::::<><><>0<>0<><>::uid://c0jp7svjrw7c0::::res://Components/interactable.gd
+party_character.tscn::PackedScene/PackedScene::7869112374692973249::1752430132::0::1::::<><><>0<>0<><>::uid://j7ldjhiddlpt::::res://Components/entity.tscn<>uid://dniu33kc5gxuu::::res://Components/health.tscn<>uid://dch8u2u6inw30::::res://Components/Stats/stat_block.tscn
+::res://Components/Skills/::1752430132
+skillbook.gd::GDScript/GDScript::4731683303277903302::1751047268::0::1::::Skillbook<>Node2D<><>0<>0<><>::
+skillbook.tscn::PackedScene/PackedScene::3651012008192882493::1752430132::0::1::::<><><>0<>0<><>::uid://b8ocernsk33n3::::res://Components/Skills/skillbook.gd
+::res://Components/Stats/::1752514274
 statblock.gd::GDScript/GDScript::5977165908729439089::1750099748::0::1::::StatBlock<>Node<><>0<>0<><>::
 stat_block.tscn::PackedScene/PackedScene::7316131209719446001::1750099748::0::1::::<><><>0<>0<><>::uid://crfnbw6ny4fl6::::res://Components/Stats/statblock.gd
 ::res://dicebag-godot/::1751046707
 Dicebag.gd::GDScript/GDScript::8652957232943652950::1751046706::0::1::::Dicebag<>RefCounted<><>0<>0<><>::
 icon.png::CompressedTexture2D/CompressedTexture2D::6207284280787139984::1751046707::1751046707::1::::<><><>0<>0<>1a4c546d2e081481a8722d6dff5c642c<>res://.godot/imported/icon.png-fcd12cb04305b3fe7eb62ebf7bdbe498.ctex::
-::res://Sprites/::1750533596
+::res://entities/::1752514981
+::res://Sprites/::1752514274
 chest-small.png::CompressedTexture2D/CompressedTexture2D::4829464889909842199::1750186199::1750186227::1::::<><><>0<>0<>0eb347162d6f0da67f0a4e15aa3cdba2<>res://.godot/imported/chest-small.png-5acfb84ed454fc2a29f138144e48a3a3.ctex::
+icon_character.png::CompressedTexture2D/CompressedTexture2D::7525387369626790736::1752514237::1752514274::1::::<><><>0<>0<>54b86ba15fd6291aae8d1fb9a8c10f00<>res://.godot/imported/icon_character.png-4d8fedfc489553e2528dc43f89940c2f.ctex::
 icon_door.png::CompressedTexture2D/CompressedTexture2D::4936761361647601169::1750533596::1750533596::1::::<><><>0<>0<>ee969dddf54345f3fefd7407b00bf3d4<>res://.godot/imported/icon_door.png-b2638c77c9cc0bc93eb5d0713be12c62.ctex::
-::res://UI/::1750705104
-Context Menu.tscn::PackedScene/PackedScene::629072374210374771::1750705104::0::1::::<><><>0<>0<><>::uid://dy8k7i1nfcanf::::res://UI/context_menu.gd
+::res://UI/::1752514993
+Context Menu.tscn::PackedScene/PackedScene::629072374210374771::1752430132::0::1::::<><><>0<>0<><>::uid://dy8k7i1nfcanf::::res://UI/context_menu.gd
 context_menu.gd::GDScript/GDScript::8912583540557811519::1750703752::0::1::::ContextMenu<>PopupPanel<><>0<>0<><>::

@@ -4,7 +4,7 @@ class_name Entity
 
 @export var entity_name : String = ""
 
-
+@export var entity_type : String = ""
 
 
 
@@ -35,8 +35,6 @@ func build_menu_options():
 			menu_options += component.get_interactions()
 			print("Found interaction:"+str(menu_options))
 	if menu_options == []:
-		push_error("No Interactions Possible")
+		push_error("No Interactions Possible") #replace with in-game UI
 		return
 	$"../ContextMenu".show_menu(menu_options)
-
-	

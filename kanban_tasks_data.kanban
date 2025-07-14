@@ -13,7 +13,7 @@
 			"tasks": [
 				"b95265d0-5637-4c56-87c4-f0bca102a178",
 				"8f2a3a62-df09-4009-af22-080a3d64bc22",
-				"e236630a-5473-469b-9718-5b7f51856560"
+				"f2563465-18c6-446e-b479-4413d08ffa3a"
 			]
 		},
 		{
@@ -60,8 +60,8 @@
 			"steps": []
 		},
 		{
-			"uuid": "e236630a-5473-469b-9718-5b7f51856560",
-			"title": "New task",
+			"uuid": "f2563465-18c6-446e-b479-4413d08ffa3a",
+			"title": "Get active player when interacting with stuff",
 			"description": "",
 			"category": "6a7fd4c0-fde7-4917-86e4-650ca922472b",
 			"steps": []

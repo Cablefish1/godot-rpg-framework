@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://cvayf8prw0o2a"]
+[gd_scene load_steps=9 format=3 uid="uid://cvayf8prw0o2a"]
 
 [ext_resource type="Script" uid="uid://c7bu8ygvv77ej" path="res://battle_screen.gd" id="1_j7yda"]
 [ext_resource type="PackedScene" uid="uid://ct8k6lsvwsile" path="res://PlayerCharacter.tscn" id="2_lxtpa"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://ccln0dsmlqf3v" path="res://Sprites/icon_door.png" id="5_3vj30"]
 [ext_resource type="PackedScene" uid="uid://dniu33kc5gxuu" path="res://Components/health.tscn" id="5_oymjd"]
 [ext_resource type="PackedScene" uid="uid://i7yy28vywiu2" path="res://UI/Context Menu.tscn" id="6_lxtpa"]
+[ext_resource type="PackedScene" uid="uid://bye8aneihhjrq" path="res://entities/overworld_npc.tscn" id="8_6mti6"]
 
 [node name="Game Screen" type="Control"]
 layout_mode = 3
@@ -35,4 +36,9 @@ visible = false
 [node name="Player" parent="." instance=ExtResource("2_lxtpa")]
 position = Vector2(472, 218)
 
+[node name="Overworld NPC" parent="." instance=ExtResource("8_6mti6")]
+position = Vector2(184, 327)
+entity_name = "Sir PickMyPockets"
+
 [editable path="Player"]
+[editable path="Overworld NPC"]
