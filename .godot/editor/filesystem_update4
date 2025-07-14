@@ -1,8 +1,10 @@
-res://Components/health.tscn
-res://Components/health.gd
+res://Components/skillbook.tscn
 res://game_screen.tscn
-res://battle_screen.gd
+res://PlayerCharacter.tscn
 res://Components/entity.tscn
 res://Components/interactable.tscn
 res://UI/Context Menu.tscn
-res://UI/context_menu.gd
+res://Components/health.tscn
+res://Components/party_character.tscn
+res://Components/Skills/skillbook.tscn
+res://Components/health.gd

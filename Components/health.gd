@@ -34,7 +34,7 @@ func calculate_health():
 	
 
 
-func take_damage(amount : int, type : String):
+func take_damage(amount : int, type : String = "Normal"):
 	if vulnurabilities.has(type):
 		hit_points = hit_points - (amount * 2)
 	if immunities.has(type):
@@ -53,7 +53,7 @@ func get_interactions() -> Array:
 	return [{
 		"name" : "Bash",
 		"callback" : Callable(self, "take_damage"),
-		"arguments": [5],
+		"arguments": [5, "Normal"],
 		"enabled" : true
 	},
 	{
