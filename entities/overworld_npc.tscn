@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dniu33kc5gxuu" path="res://Components/health.tscn" id="2_3m4uw"]
 [ext_resource type="PackedScene" uid="uid://bsatvtkx74qfl" path="res://Components/Skills/skillbook.tscn" id="3_kwpjl"]
 [ext_resource type="PackedScene" uid="uid://dch8u2u6inw30" path="res://Components/Stats/stat_block.tscn" id="4_07jsr"]
-[ext_resource type="PackedScene" uid="uid://ciayiffl6mavw" path="res://Components/interactable.tscn" id="5_wh8dq"]
+[ext_resource type="PackedScene" uid="uid://ciayiffl6mavw" path="res://Components/Control Mechanics/interactable.tscn" id="5_wh8dq"]
 [ext_resource type="Texture2D" uid="uid://dfhmbbi72aeaq" path="res://Sprites/icon_character.png" id="6_wo0d5"]
 
 [node name="Overworld NPC" type="Node2D"]

@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://bve4d25o7cqu2"]
+
+[ext_resource type="PackedScene" uid="uid://dch8u2u6inw30" path="res://Components/Stats/stat_block.tscn" id="1_mbomg"]
+[ext_resource type="Script" uid="uid://c3k21txsskeh6" path="res://entities/party_character.gd" id="1_vmuee"]
+[ext_resource type="PackedScene" uid="uid://bsatvtkx74qfl" path="res://Components/Skills/skillbook.tscn" id="2_vmuee"]
+[ext_resource type="PackedScene" uid="uid://dniu33kc5gxuu" path="res://Components/health.tscn" id="3_41mo5"]
+
+[node name="PartyCharacter" type="Node2D"]
+script = ExtResource("1_vmuee")
+
+[node name="StatBlock" parent="." instance=ExtResource("1_mbomg")]
+
+[node name="Skillbook" parent="." instance=ExtResource("2_vmuee")]
+
+[node name="Health" parent="." instance=ExtResource("3_41mo5")]
+
+[node name="Portrait Button" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[connection signal="pressed" from="Portrait Button" to="." method="_on_portrait_button_pressed"]

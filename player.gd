@@ -11,11 +11,3 @@ func _ready() -> void:
 	var modifier = statblock.get_modifier("strength")
 	health_component = get_node_or_null("Health")
 	print("Modifier is "+str(modifier))
-
-
-func take_damage(amount, damage_type):
-	
-	if health_component == null:
-		push_error("Target has no health component")
-		return
-	health_component.take_damage(amount, damage_type)

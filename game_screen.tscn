@@ -1,13 +1,13 @@
 [gd_scene load_steps=9 format=3 uid="uid://cvayf8prw0o2a"]
 
 [ext_resource type="Script" uid="uid://c7bu8ygvv77ej" path="res://battle_screen.gd" id="1_j7yda"]
-[ext_resource type="PackedScene" uid="uid://ct8k6lsvwsile" path="res://PlayerCharacter.tscn" id="2_lxtpa"]
 [ext_resource type="PackedScene" uid="uid://j7ldjhiddlpt" path="res://Components/entity.tscn" id="3_3vj30"]
-[ext_resource type="PackedScene" uid="uid://ciayiffl6mavw" path="res://Components/interactable.tscn" id="4_6mti6"]
+[ext_resource type="PackedScene" uid="uid://ciayiffl6mavw" path="res://Components/Control Mechanics/interactable.tscn" id="4_6mti6"]
 [ext_resource type="Texture2D" uid="uid://ccln0dsmlqf3v" path="res://Sprites/icon_door.png" id="5_3vj30"]
 [ext_resource type="PackedScene" uid="uid://dniu33kc5gxuu" path="res://Components/health.tscn" id="5_oymjd"]
 [ext_resource type="PackedScene" uid="uid://i7yy28vywiu2" path="res://UI/Context Menu.tscn" id="6_lxtpa"]
 [ext_resource type="PackedScene" uid="uid://bye8aneihhjrq" path="res://entities/overworld_npc.tscn" id="8_6mti6"]
+[ext_resource type="PackedScene" uid="uid://bve4d25o7cqu2" path="res://entities/party_character.tscn" id="8_oymjd"]
 
 [node name="Game Screen" type="Control"]
 layout_mode = 3
@@ -33,12 +33,11 @@ vulnurabilities = Array[String](["Fire"])
 [node name="ContextMenu" parent="." instance=ExtResource("6_lxtpa")]
 visible = false
 
-[node name="Player" parent="." instance=ExtResource("2_lxtpa")]
-position = Vector2(472, 218)
-
 [node name="Overworld NPC" parent="." instance=ExtResource("8_6mti6")]
 position = Vector2(184, 327)
 entity_name = "Sir PickMyPockets"
 
-[editable path="Player"]
+[node name="PartyCharacter" parent="." instance=ExtResource("8_oymjd")]
+position = Vector2(390, 229)
+
 [editable path="Overworld NPC"]
