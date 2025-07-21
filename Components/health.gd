@@ -61,7 +61,7 @@ func get_interactions() -> Array:
 			"arguments": [],
 			"enabled" : true
 		}]
-	else: #target is something else that can be hurt
+	else: #target is inanimatebut can be hurt
 		return [{
 			"name" : "Bash",
 			"callback" : Callable(self, "take_damage"),

@@ -1,3 +1,6 @@
-[gd_scene format=3 uid="uid://bork4d08p42qu"]
+[gd_scene load_steps=2 format=3 uid="uid://bork4d08p42qu"]
 
-[node name="Selected" type="Node"]
+[ext_resource type="Script" uid="uid://b2ew4ycw2aplh" path="res://Components/Control Mechanics/selected.gd" id="1_ga5ph"]
+
+[node name="Selected" type="Node" groups=["Selected"]]
+script = ExtResource("1_ga5ph")

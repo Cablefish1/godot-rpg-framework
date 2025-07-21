@@ -13,7 +13,9 @@
 			"tasks": [
 				"b95265d0-5637-4c56-87c4-f0bca102a178",
 				"8f2a3a62-df09-4009-af22-080a3d64bc22",
-				"f2563465-18c6-446e-b479-4413d08ffa3a"
+				"f2563465-18c6-446e-b479-4413d08ffa3a",
+				"7c29912e-cc9f-4513-8e8c-4af94f45abcd",
+				"5d71830c-c19d-4f74-a7c9-e1d8b2daf2ac"
 			]
 		},
 		{
@@ -61,7 +63,21 @@
 		},
 		{
 			"uuid": "f2563465-18c6-446e-b479-4413d08ffa3a",
-			"title": "Get active player when interacting with stuff",
+			"title": "Select player from party",
+			"description": "",
+			"category": "6a7fd4c0-fde7-4917-86e4-650ca922472b",
+			"steps": []
+		},
+		{
+			"uuid": "7c29912e-cc9f-4513-8e8c-4af94f45abcd",
+			"title": "Inventory",
+			"description": "",
+			"category": "6a7fd4c0-fde7-4917-86e4-650ca922472b",
+			"steps": []
+		},
+		{
+			"uuid": "5d71830c-c19d-4f74-a7c9-e1d8b2daf2ac",
+			"title": "Character sheet",
 			"description": "",
 			"category": "6a7fd4c0-fde7-4917-86e4-650ca922472b",
 			"steps": []

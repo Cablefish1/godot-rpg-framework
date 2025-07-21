@@ -1,12 +1,7 @@
 res://game_screen.tscn
-res://Components/entity.tscn
-res://Components/interactable.tscn
-res://UI/Context Menu.tscn
-res://Components/health.tscn
-res://Components/party_character.tscn
-res://Components/Skills/skillbook.tscn
-res://PlayerCharacter.tscn
+res://Components/Control Mechanics/selected.tscn
+res://Components/Control Mechanics/interactable.tscn
+res://Components/lock.tscn
 res://entities/overworld_npc.tscn
-res://player.gd
-res://entities/party_character.tscn
-res://entities/party_character.gd
+res://Components/Skills/skillbook.tscn
+res://Components/lock.gd

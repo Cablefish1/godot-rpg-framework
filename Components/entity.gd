@@ -30,11 +30,14 @@ func build_menu_options():
 	print("building context menu")
 	var menu_options : = []
 	for component in get_children():
-		print(component)
 		if component.has_method("get_interactions"):
 			menu_options += component.get_interactions()
-			print("Found interaction:"+str(menu_options))
+			#DEBUG print("Found interaction:"+str(menu_options))
 	if menu_options == []:
 		push_error("No Interactions Possible") #replace with in-game UI
 		return
 	$"../ContextMenu".show_menu(menu_options)
+
+
+
+	

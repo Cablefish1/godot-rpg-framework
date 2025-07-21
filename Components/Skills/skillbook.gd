@@ -1,6 +1,11 @@
 extends Node2D
 class_name Skillbook
 
+@onready var dicebag = Dicebag.new()
+
+
+func _ready():
+	add_to_group("Skillbook")
 
 
 @export var skills : Dictionary = {
@@ -9,7 +14,15 @@ class_name Skillbook
 	"Search" : 2
 }
 
-@onready var dicebag = Dicebag.new()
+
+func has_skill(skill_name : String) -> bool:
+	return skill_name in skills #this is the tricky bit of code that returns true if the condition is met.
+
+func get_skill_level(skill_name : String) -> int:
+	if not skills.has(skill_name):
+		push_error("Skill '%s' not found in skillbook" % skill_name)
+	return skills.get(skill_name, 0) 
+
 
 func roll_skill(skill_name : String, dificulty : int):
 	var roll = dicebag.roll_dice(1, 20, skills[skill_name])

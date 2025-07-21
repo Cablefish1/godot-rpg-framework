@@ -15,6 +15,10 @@ run/main_scene="uid://cvayf8prw0o2a"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+global_party_controller="*res://Globals/global_party_controller.gd"
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/kanban_tasks/plugin.cfg")

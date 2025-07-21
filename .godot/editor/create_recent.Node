@@ -1,8 +1,11 @@
+Entity
+Interactable
+Node
+ColorRect
+Panel
 Button
 Sprite2D
 Node2D
-Node
-Entity
 PopupPanel
 VBoxContainer
 PanelContainer
