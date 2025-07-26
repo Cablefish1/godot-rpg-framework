@@ -1,4 +1,4 @@
-extends Node2D
+extends Node
 class_name Skillbook
 
 @onready var dicebag = Dicebag.new()
@@ -8,11 +8,16 @@ func _ready():
 	add_to_group("Skillbook")
 
 
+
+
 @export var skills : Dictionary = {
-	"Lockpicking" : 3,
-	"Spot" : 1,
-	"Search" : 2
+
 }
+#Sample skills
+#	"Lockpicking" : 3,
+#	"Spot" : 1,
+#	"Search" : 2
+
 
 
 func has_skill(skill_name : String) -> bool:
@@ -24,9 +29,21 @@ func get_skill_level(skill_name : String) -> int:
 	return skills.get(skill_name, 0) 
 
 
-func roll_skill(skill_name : String, dificulty : int):
-	var roll = dicebag.roll_dice(1, 20, skills[skill_name])
-	if roll >= dificulty:
-		return true
-	else:
-		return false
+
+
+func roll_skill(skill_name : String, dificulty : int) -> Dictionary:
+	var roll = dicebag.roll_dice(1, 20)
+	var modifier = skills[skill_name]	
+	var total = roll + modifier - dificulty
+	print(roll)
+	var crit : String = "NONE"
+	if roll == 20:
+		crit = "critical success"
+	if roll == 1:
+		crit = "critical fail"
+	return {
+		"value" : total,
+		"critical" : crit,
+		"roll" : roll,
+		"modifier" : modifier
+	}

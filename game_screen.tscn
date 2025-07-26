@@ -1,11 +1,12 @@
-[gd_scene load_steps=11 format=3 uid="uid://cvayf8prw0o2a"]
+[gd_scene load_steps=12 format=3 uid="uid://cvayf8prw0o2a"]
 
 [ext_resource type="Script" uid="uid://c7bu8ygvv77ej" path="res://battle_screen.gd" id="1_j7yda"]
+[ext_resource type="Texture2D" uid="uid://yx7d5rxl7g2o" path="res://Sprites/Backgrounds/background_moms_farm.png" id="2_viusa"]
 [ext_resource type="PackedScene" uid="uid://j7ldjhiddlpt" path="res://Components/entity.tscn" id="3_3vj30"]
 [ext_resource type="PackedScene" uid="uid://ciayiffl6mavw" path="res://Components/Control Mechanics/interactable.tscn" id="4_6mti6"]
 [ext_resource type="Texture2D" uid="uid://ccln0dsmlqf3v" path="res://Sprites/icon_door.png" id="5_3vj30"]
 [ext_resource type="PackedScene" uid="uid://dniu33kc5gxuu" path="res://Components/health.tscn" id="5_oymjd"]
-[ext_resource type="PackedScene" uid="uid://c6vl8ruol58v1" path="res://Components/lock.tscn" id="6_aybt7"]
+[ext_resource type="PackedScene" uid="uid://c6vl8ruol58v1" path="res://Components/Skills/Skill challanges/lock.tscn" id="6_aybt7"]
 [ext_resource type="PackedScene" uid="uid://i7yy28vywiu2" path="res://UI/Context Menu.tscn" id="6_lxtpa"]
 [ext_resource type="PackedScene" uid="uid://bye8aneihhjrq" path="res://entities/overworld_npc.tscn" id="8_6mti6"]
 [ext_resource type="PackedScene" uid="uid://bve4d25o7cqu2" path="res://entities/party_character.tscn" id="8_oymjd"]
@@ -20,16 +21,20 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_j7yda")
 
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(576, 432)
+texture = ExtResource("2_viusa")
+
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 69.0
-offset_top = 479.0
-offset_right = 115.0
-offset_bottom = 523.0
+offset_left = 72.0
+offset_top = 696.0
+offset_right = 118.0
+offset_bottom = 740.0
 text = "Party:"
 
 [node name="Door" parent="." instance=ExtResource("3_3vj30")]
-position = Vector2(644, 295)
+position = Vector2(651, 467)
 entity_name = "Door"
 entity_type = "Door"
 
@@ -42,7 +47,6 @@ hit_points = 8
 vulnurabilities = Array[String](["Fire"])
 
 [node name="Lock" parent="Door" instance=ExtResource("6_aybt7")]
-lock_strength = 25
 
 [node name="ContextMenu" parent="." instance=ExtResource("6_lxtpa")]
 visible = false
@@ -50,9 +54,13 @@ visible = false
 [node name="Overworld NPC" parent="." instance=ExtResource("8_6mti6")]
 position = Vector2(184, 327)
 entity_name = "Sir PickMyPockets"
+metadata/_edit_lock_ = true
+
+[node name="Interactable" parent="Overworld NPC" index="3"]
+metadata/_edit_lock_ = true
 
 [node name="PCRatMan" parent="." instance=ExtResource("8_oymjd")]
-position = Vector2(116, 542)
+position = Vector2(77, 733)
 
 [node name="Skillbook" parent="PCRatMan" index="1"]
 skills = {
@@ -61,10 +69,7 @@ skills = {
 }
 
 [node name="PartyCharacter" parent="." instance=ExtResource("8_oymjd")]
-position = Vector2(242, 547)
-
-[node name="Skillbook" parent="PartyCharacter" index="1"]
-position = Vector2(1, 5)
+position = Vector2(196, 736)
 
 [node name="SelectColor" parent="PartyCharacter" index="3"]
 offset_left = -17.0

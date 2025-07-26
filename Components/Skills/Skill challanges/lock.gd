@@ -33,10 +33,16 @@ func get_interactions() -> Array:
 func attempt_pick():
 	var pc = global_party_controller.get_selected_entity()
 	var skillbook = pc.get_component("Skillbook")
-	if skillbook.roll_skill(REQUIRED_SKILL, lock_strength) == true:
-		print("lockpick succesful")
-		get_parent().queue_free()
+	var attempt = skillbook.roll_skill(REQUIRED_SKILL, lock_strength)
+	var crit = attempt["critical"]
+	if crit == "critical success":
+		print("Critical succes")
+	if crit == "critical fail":
+		print("Lockpick broke") #and alerted opponents
 	else:
-		print("lockpicking failed")
+		if attempt["value"] >= 0:
+			print("Successful by %d" %attempt.value)
+		else:
+			print("Failed by %d" % - attempt.value)
 		
 	

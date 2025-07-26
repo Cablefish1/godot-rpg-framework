@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://c6vl8ruol58v1"]
 
-[ext_resource type="Script" uid="uid://bchfjb06t7ptj" path="res://Components/lock.gd" id="1_l5ccq"]
+[ext_resource type="Script" uid="uid://bchfjb06t7ptj" path="res://Components/Skills/Skill challanges/lock.gd" id="1_l5ccq"]
 
 [node name="Lock" type="Node"]
 script = ExtResource("1_l5ccq")

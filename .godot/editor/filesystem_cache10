@@ -1,8 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1752946975
-battle_screen.gd::GDScript/GDScript::7022223283424220801::1750702333::0::1::::<>Control<><>0<>0<><>::
-credits.txt::TextFile/TextFile::-1::1752605562::0::1::::<><><>0<>0<><>::
-game_screen.tscn::PackedScene::6248274977826224086::1752945563::0::1::::<><><>0<>0<><>::uid://c7bu8ygvv77ej::::res://battle_screen.gd<>uid://j7ldjhiddlpt::::res://Components/entity.tscn<>uid://ciayiffl6mavw::::res://Components/Control Mechanics/interactable.tscn<>uid://ccln0dsmlqf3v::::res://Sprites/icon_door.png<>uid://dniu33kc5gxuu::::res://Components/health.tscn<>uid://c6vl8ruol58v1::::res://Components/lock.tscn<>uid://i7yy28vywiu2::::res://UI/Context Menu.tscn<>uid://bye8aneihhjrq::::res://entities/overworld_npc.tscn<>uid://bve4d25o7cqu2::::res://entities/party_character.tscn<>uid://bi8x4w467t33x::::res://Sprites/48_boss_x.png
+::res://::1753295619
+battle_screen.gd::GDScript/GDScript::7022223283424220801::1753119848::0::1::::<>Control<><>0<>0<><>::
+credits.txt::TextFile/TextFile::-1::1753295582::0::1::::<><><>0<>0<><>::
+game_screen.tscn::PackedScene/PackedScene::6248274977826224086::1753295582::0::1::::<><><>0<>0<><>::uid://c7bu8ygvv77ej::::res://battle_screen.gd<>uid://yx7d5rxl7g2o::::res://Sprites/Backgrounds/background_moms_farm.png<>uid://j7ldjhiddlpt::::res://Components/entity.tscn<>uid://ciayiffl6mavw::::res://Components/Control Mechanics/interactable.tscn<>uid://ccln0dsmlqf3v::::res://Sprites/icon_door.png<>uid://dniu33kc5gxuu::::res://Components/health.tscn<>uid://c6vl8ruol58v1::::res://Components/Skills/Skill challanges/lock.tscn<>uid://i7yy28vywiu2::::res://UI/Context Menu.tscn<>uid://bye8aneihhjrq::::res://entities/overworld_npc.tscn<>uid://bve4d25o7cqu2::::res://entities/party_character.tscn<>uid://bi8x4w467t33x::::res://Sprites/48_boss_x.png
 icon.svg::CompressedTexture2D/CompressedTexture2D::6609103810336174842::1750099748::1750701459::1::::<><><>0<>0<>d491996e4a5b56b1fc2174def86cd008<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 player.gd::GDScript/GDScript::1703808931581986135::1752602973::0::1::::Player<>Node2D<><>0<>0<><>::
 PlayerCharacter.tscn::PackedScene/PackedScene::6175216998479097898::1752516316::0::1::::<><><>0<>0<><>::uid://yjlqpx7s07qp::::res://player.gd<>uid://c1fq8eeff6j4u::::res://icon.svg<>uid://dniu33kc5gxuu::::res://Components/health.tscn<>uid://dch8u2u6inw30::::res://Components/Stats/stat_block.tscn<>uid://bsatvtkx74qfl::::res://Components/Skills/skillbook.tscn
@@ -75,39 +75,48 @@ start.tscn::PackedScene/PackedScene::2692091061628401710::1750701480::0::1::::<>
 autosize_label.gd::GDScript/GDScript::7912999680173541418::1750701480::0::1::::<>Label<><>0<>1<><>::
 task.gd::GDScript/GDScript::8745945234502471197::1750701480::0::1::::<>MarginContainer<><>0<>1<><>::
 task.tscn::PackedScene/PackedScene::5508831843714498441::1750701480::0::1::::<><><>0<>0<><>::res://addons/kanban_tasks/view/task/task.gd<>res://addons/kanban_tasks/edit_label/edit_label.gd<>res://addons/kanban_tasks/view/task/autosize_label.gd<>uid://bwi22eyrmeeet::::res://addons/kanban_tasks/view/details/details.tscn<>uid://dwjg5vyxx4g48::::res://addons/kanban_tasks/view/details/step_holder.tscn<>res://addons/kanban_tasks/expand_button/expand_button.gd
-::res://Components/::1752945563
+::res://Components/::1753293337
 entity.gd::GDScript/GDScript::7027547629114479542::1752867647::0::1::::Entity<>Node2D<><>0<>0<><>::
 entity.tscn::PackedScene/PackedScene::698433409065755845::1752516316::0::1::::<><><>0<>0<><>::uid://c7egxhhnieaje::::res://Components/entity.gd
 health.gd::GDScript/GDScript::3055390350285218716::1752866741::0::1::::Health<>Node<><>0<>0<><>::
 health.tscn::PackedScene/PackedScene::8089497868723940968::1752516536::0::1::::<><><>0<>0<><>::uid://bjsb3ktkluspg::::res://Components/health.gd
-lock.gd::GDScript::2541568764935185435::1752945563::0::1::::Lock<>Node<><>0<>0<><>::
-lock.tscn::PackedScene::6992775195564808392::1752945512::0::1::::<><><>0<>0<><>::uid://bchfjb06t7ptj::::res://Components/lock.gd
-::res://Components/Control Mechanics/::1752945512
+::res://Components/Control Mechanics/::1753208705
 interactable.gd::GDScript/GDScript::6547110736713736957::1752602973::0::1::::Interactable<>Button<><>0<>0<><>::
-interactable.tscn::PackedScene::5335823881550556752::1752945512::0::1::::<><><>0<>0<><>::uid://c0jp7svjrw7c0::::res://Components/Control Mechanics/interactable.gd
+interactable.tscn::PackedScene/PackedScene::5335823881550556752::1753208705::0::1::::<><><>0<>0<><>::uid://c0jp7svjrw7c0::::res://Components/Control Mechanics/interactable.gd
 selected.gd::GDScript/GDScript::4291165799486009129::1752691574::0::1::::Selected<>Node<><>0<>0<><>::
-selected.tscn::PackedScene::3404818072106223704::1752945512::0::1::::<><><>0<>0<><>::uid://b2ew4ycw2aplh::::res://Components/Control Mechanics/selected.gd
-::res://Components/Skills/::1752945512
-skillbook.gd::GDScript::4731683303277903302::1752944033::0::1::::Skillbook<>Node2D<><>0<>0<><>::
-skillbook.tscn::PackedScene::3651012008192882493::1752945512::0::1::::<><><>0<>0<><>::uid://b8ocernsk33n3::::res://Components/Skills/skillbook.gd
-::res://Components/Stats/::1752514274
-statblock.gd::GDScript/GDScript::5977165908729439089::1750099748::0::1::::StatBlock<>Node<><>0<>0<><>::
+selected.tscn::PackedScene/PackedScene::3404818072106223704::1753208705::0::1::::<><><>0<>0<><>::uid://b2ew4ycw2aplh::::res://Components/Control Mechanics/selected.gd
+::res://Components/Skills/::1753293342
+skillbook.gd::GDScript/GDScript::4731683303277903302::1753293332::0::1::::Skillbook<>Node<><>0<>0<><>::
+skillbook.tscn::PackedScene/PackedScene::3651012008192882493::1753208705::0::1::::<><><>0<>0<><>::uid://b8ocernsk33n3::::res://Components/Skills/skillbook.gd
+::res://Components/Skills/Skill challanges/::1753293342
+lock.gd::GDScript/GDScript::2541568764935185435::1753162881::0::1::::Lock<>Node<><>0<>0<><>::
+lock.tscn::PackedScene/PackedScene::6992775195564808392::1753293342::0::1::::<><><>0<>0<><>::uid://bchfjb06t7ptj::::res://Components/Skills/Skill challanges/lock.gd
+::res://Components/Stats/::1753293669
+statblock.gd::GDScript/GDScript::5977165908729439089::1753293669::0::1::::StatBlock<>Node<><>0<>0<><>::
 stat_block.tscn::PackedScene/PackedScene::7316131209719446001::1750099748::0::1::::<><><>0<>0<><>::uid://crfnbw6ny4fl6::::res://Components/Stats/statblock.gd
 ::res://dicebag-godot/::1751046707
 Dicebag.gd::GDScript/GDScript::8652957232943652950::1751046706::0::1::::Dicebag<>RefCounted<><>0<>0<><>::
 icon.png::CompressedTexture2D/CompressedTexture2D::6207284280787139984::1751046707::1751046707::1::::<><><>0<>0<>1a4c546d2e081481a8722d6dff5c642c<>res://.godot/imported/icon.png-fcd12cb04305b3fe7eb62ebf7bdbe498.ctex::
-::res://entities/::1752945512
-overworld_npc.tscn::PackedScene::4081214792139304094::1752945512::0::1::::<><><>0<>0<><>::uid://c7egxhhnieaje::::res://Components/entity.gd<>uid://dniu33kc5gxuu::::res://Components/health.tscn<>uid://bsatvtkx74qfl::::res://Components/Skills/skillbook.tscn<>uid://dch8u2u6inw30::::res://Components/Stats/stat_block.tscn<>uid://ciayiffl6mavw::::res://Components/Control Mechanics/interactable.tscn<>uid://dfhmbbi72aeaq::::res://Sprites/icon_character.png
+::res://entities/::1753295697
+combat_encounter.tscn::PackedScene/PackedScene::6362441630433410193::1753212293::0::1::::<><><>0<>0<><>::uid://c7egxhhnieaje::::res://Components/entity.gd<>uid://bjyp2k7jnyky8::::res://Sprites/icon_weapon.png<>uid://c0jp7svjrw7c0::::res://Components/Control Mechanics/interactable.gd
+enemy_template.tscn::PackedScene/PackedScene::6542520349660249926::1753295443::0::1::::<><><>0<>0<><>::uid://c7egxhhnieaje::::res://Components/entity.gd<>uid://bsatvtkx74qfl::::res://Components/Skills/skillbook.tscn<>uid://dch8u2u6inw30::::res://Components/Stats/stat_block.tscn<>uid://dniu33kc5gxuu::::res://Components/health.tscn<>uid://gxomadlniflm::::res://Sprites/03_Rat_A.png
+overworld_npc.tscn::PackedScene/PackedScene::4081214792139304094::1753208705::0::1::::<><><>0<>0<><>::uid://c7egxhhnieaje::::res://Components/entity.gd<>uid://dniu33kc5gxuu::::res://Components/health.tscn<>uid://bsatvtkx74qfl::::res://Components/Skills/skillbook.tscn<>uid://dch8u2u6inw30::::res://Components/Stats/stat_block.tscn<>uid://ciayiffl6mavw::::res://Components/Control Mechanics/interactable.tscn<>uid://dfhmbbi72aeaq::::res://Sprites/icon_character.png
 party_character.gd::GDScript/GDScript::6760459590554372365::1752866741::0::1::::PartyCharacter<>Entity<><>0<>0<><>::
-party_character.tscn::PackedScene/PackedScene::3870411526433505235::1752867647::0::1::::<><><>0<>0<><>::uid://dch8u2u6inw30::::res://Components/Stats/stat_block.tscn<>uid://c3k21txsskeh6::::res://entities/party_character.gd<>uid://bsatvtkx74qfl::::res://Components/Skills/skillbook.tscn<>uid://dniu33kc5gxuu::::res://Components/health.tscn<>uid://vspab05kho2g::::res://Sprites/08_boss_x.png
+party_character.tscn::PackedScene/PackedScene::3870411526433505235::1753208705::0::1::::<><><>0<>0<><>::uid://dch8u2u6inw30::::res://Components/Stats/stat_block.tscn<>uid://c3k21txsskeh6::::res://entities/party_character.gd<>uid://bsatvtkx74qfl::::res://Components/Skills/skillbook.tscn<>uid://dniu33kc5gxuu::::res://Components/health.tscn<>uid://vspab05kho2g::::res://Sprites/08_boss_x.png
+enemy_rat.tscn::PackedScene::8926524759791302131::1753295697::0::1::::<><><>0<>0<><>::uid://c7egxhhnieaje::::res://Components/entity.gd<>uid://bsatvtkx74qfl::::res://Components/Skills/skillbook.tscn<>uid://dch8u2u6inw30::::res://Components/Stats/stat_block.tscn<>uid://dniu33kc5gxuu::::res://Components/health.tscn<>uid://gxomadlniflm::::res://Sprites/03_Rat_A.png
+::res://entities/Enemies/::1753295619
 ::res://Globals/::1752868301
 global_party_controller.gd::GDScript/GDScript::583733477653721642::1752868301::0::1::::GlobalPartyController<>Node<><>0<>0<><>::
-::res://Sprites/::1752672904
+::res://Sprites/::1753295419
+03_Rat_A.png::CompressedTexture2D/CompressedTexture2D::469485222749054278::1753295419::1753295419::1::::<><><>0<>0<>f3b7e030f19b3ca8798d3cec96ff8baa<>res://.godot/imported/03_Rat_A.png-f3afcf7091eaa575e47a66e159d032f3.ctex::
 08_boss_x.png::CompressedTexture2D/CompressedTexture2D::1512035363383431852::1752605535::1752605535::1::::<><><>0<>0<>a1920366a2259f33574e2eda8d1e8883<>res://.godot/imported/08_boss_x.png-4e6e275fac2f140ab1dfc6564bbd1f9d.ctex::
 48_boss_x.png::CompressedTexture2D/CompressedTexture2D::3017505379303275639::1752672904::1752672904::1::::<><><>0<>0<>0b3cdfe5c2ab96dd3ad522a82f927563<>res://.godot/imported/48_boss_x.png-a9279484806eb8ea82dadeedf4cc1305.ctex::
 chest-small.png::CompressedTexture2D/CompressedTexture2D::4829464889909842199::1750186199::1750186227::1::::<><><>0<>0<>0eb347162d6f0da67f0a4e15aa3cdba2<>res://.godot/imported/chest-small.png-5acfb84ed454fc2a29f138144e48a3a3.ctex::
 icon_character.png::CompressedTexture2D/CompressedTexture2D::7525387369626790736::1752514237::1752514274::1::::<><><>0<>0<>54b86ba15fd6291aae8d1fb9a8c10f00<>res://.godot/imported/icon_character.png-4d8fedfc489553e2528dc43f89940c2f.ctex::
 icon_door.png::CompressedTexture2D/CompressedTexture2D::4936761361647601169::1750533596::1750533596::1::::<><><>0<>0<>ee969dddf54345f3fefd7407b00bf3d4<>res://.godot/imported/icon_door.png-b2638c77c9cc0bc93eb5d0713be12c62.ctex::
+icon_weapon.png::CompressedTexture2D/CompressedTexture2D::3068624888954245929::1753211596::1753211597::1::::<><><>0<>0<>1561f65f56f58fc2e1e0849aef0d192b<>res://.godot/imported/icon_weapon.png-0807ce79ef0dafceb46f09870de31d4e.ctex::
+::res://Sprites/Backgrounds/::1753119576
+background_moms_farm.png::CompressedTexture2D/CompressedTexture2D::1733962839829553036::1753119565::1753119565::1::::<><><>0<>0<>6a9e9f617a9b5ada527f7bf1b74a1e01<>res://.godot/imported/background_moms_farm.png-7017c423044104a0e3af0ccd4fdbae66.ctex::
 ::res://UI/::1752516316
 Context Menu.tscn::PackedScene/PackedScene::629072374210374771::1752516316::0::1::::<><><>0<>0<><>::uid://dy8k7i1nfcanf::::res://UI/context_menu.gd
 context_menu.gd::GDScript/GDScript::8912583540557811519::1750703752::0::1::::ContextMenu<>PopupPanel<><>0<>0<><>::

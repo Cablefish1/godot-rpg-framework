@@ -1,10 +1,10 @@
+Button
 Entity
 Interactable
 Node
+Sprite2D
 ColorRect
 Panel
-Button
-Sprite2D
 Node2D
 PopupPanel
 VBoxContainer

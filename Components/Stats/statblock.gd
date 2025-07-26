@@ -2,13 +2,20 @@ extends Node
 class_name StatBlock
 
 
+
 @export_category("Stats")
-@export var strength : int = 12
-@export var perception : int = 10
-@export var constitution : int = 10
-@export var agility : int = 10
-@export var intelligence : int = 10 
-@export var charisma : int = 10
+@export var strength : int = 8
+@export var perception : int = 8
+@export var constitution : int = 8
+@export var agility : int = 8
+@export var intelligence : int = 8
+@export var charisma : int = 8
+
+
+
+func _ready() -> void:
+	add_to_group("Statblock")
+
 
 
 func get_modifier(stat: String) -> int:

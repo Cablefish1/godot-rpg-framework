@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://d0gcs80xs7pst"]
+
+[ext_resource type="Script" uid="uid://c7egxhhnieaje" path="res://Components/entity.gd" id="1_krrhc"]
+[ext_resource type="PackedScene" uid="uid://bsatvtkx74qfl" path="res://Components/Skills/skillbook.tscn" id="2_v6avk"]
+[ext_resource type="PackedScene" uid="uid://dch8u2u6inw30" path="res://Components/Stats/stat_block.tscn" id="3_847kl"]
+[ext_resource type="PackedScene" uid="uid://dniu33kc5gxuu" path="res://Components/health.tscn" id="4_nxjia"]
+[ext_resource type="Texture2D" uid="uid://gxomadlniflm" path="res://Sprites/03_Rat_A.png" id="5_7atta"]
+
+[node name="Enemy template" type="Node2D"]
+script = ExtResource("1_krrhc")
+entity_type = "Enemy"
+metadata/_custom_type_script = "uid://c7egxhhnieaje"
+
+[node name="Skillbook" parent="." instance=ExtResource("2_v6avk")]
+
+[node name="StatBlock" parent="." groups=["Statblock"] instance=ExtResource("3_847kl")]
+
+[node name="Health" parent="." instance=ExtResource("4_nxjia")]
+
+[node name="TargetButton" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -66.5
+offset_top = -70.5
+offset_right = 66.5
+offset_bottom = 70.5
+grow_horizontal = 2
+grow_vertical = 2
+icon = ExtResource("5_7atta")

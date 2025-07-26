@@ -22,6 +22,7 @@ entity_type = "Party Character"
 offset_right = 84.0
 offset_bottom = 82.0
 color = Color(0.41598, 0.41598, 0.41598, 1)
+metadata/_edit_lock_ = true
 
 [node name="Portrait Button" type="Button" parent="SelectColor"]
 layout_mode = 1
@@ -38,5 +39,6 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_41mo5")
 icon = ExtResource("5_41mo5")
+metadata/_edit_lock_ = true
 
 [connection signal="pressed" from="SelectColor/Portrait Button" to="." method="_on_portrait_button_pressed"]

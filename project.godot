@@ -19,6 +19,10 @@ config/icon="res://icon.svg"
 
 global_party_controller="*res://Globals/global_party_controller.gd"
 
+[display]
+
+window/size/viewport_height=864
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/kanban_tasks/plugin.cfg")
