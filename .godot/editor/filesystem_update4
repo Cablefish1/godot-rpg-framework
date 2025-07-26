@@ -1,6 +1,5 @@
-res://game_screen.tscn
-res://Components/Skills/skillbook.gd
-res://Components/Skills/Skill chalanges/lock.tscn
-res://entities/enemy_template.tscn
-res://Components/Stats/statblock.gd
-res://credits.txt
+res://Components/combat_encounter.tscn
+res://Components/combat_encounter.gd
+res://entities/party_character.tscn
+res://Globals/game_state.gd
+res://Globals/global_party_controller.gd

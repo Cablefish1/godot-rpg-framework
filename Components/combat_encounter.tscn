@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://ithdfhpwixdf"]
+
+[ext_resource type="Script" uid="uid://1qug1wd3tlbq" path="res://Components/combat_encounter.gd" id="1_hrtuj"]
+
+[node name="CombatEncounter" type="Node"]
+script = ExtResource("1_hrtuj")
+enemy_scene_paths = ["res://entities/Enemies/enemy_rat.tscn", "res://entities/Enemies/enemy_rat.tscn"]

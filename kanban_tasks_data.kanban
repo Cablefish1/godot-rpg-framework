@@ -11,6 +11,7 @@
 			"uuid": "527e66fe-8301-4f59-985c-527cf8519000",
 			"title": "Todo",
 			"tasks": [
+				"89598945-5bd5-4713-a735-5790531eeec3",
 				"c36a52d7-1678-47e9-942f-79005219a7e9",
 				"7c29912e-cc9f-4513-8e8c-4af94f45abcd",
 				"5d71830c-c19d-4f74-a7c9-e1d8b2daf2ac"
@@ -20,6 +21,7 @@
 			"uuid": "41355128-ed8b-4aaf-a22c-d859d168fd09",
 			"title": "Doing",
 			"tasks": [
+				"35b90727-d691-4115-bb66-35fcfc401623",
 				"8f2a3a62-df09-4009-af22-080a3d64bc22",
 				"b95265d0-5637-4c56-87c4-f0bca102a178"
 			]
@@ -99,6 +101,10 @@
 					"done": false
 				},
 				{
+					"details": "Assing party member nodes",
+					"done": false
+				},
+				{
 					"details": "Global scene-changer",
 					"done": false
 				},
@@ -111,6 +117,20 @@
 					"done": false
 				}
 			]
+		},
+		{
+			"uuid": "89598945-5bd5-4713-a735-5790531eeec3",
+			"title": "ADD STORYTELLER",
+			"description": "",
+			"category": "6a7fd4c0-fde7-4917-86e4-650ca922472b",
+			"steps": []
+		},
+		{
+			"uuid": "35b90727-d691-4115-bb66-35fcfc401623",
+			"title": "LEFT OFF: ChatGPT: Party member logic",
+			"description": "",
+			"category": "6a7fd4c0-fde7-4917-86e4-650ca922472b",
+			"steps": []
 		}
 	],
 	"layout": {

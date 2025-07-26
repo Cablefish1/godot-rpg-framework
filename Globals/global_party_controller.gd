@@ -29,5 +29,7 @@ func get_selected_entity() -> Node:
 	return selected_entity
 
 
+func get_all_party_members() ->
+
 func get_skill_or_null():
 	get_selected_entity().get_node_or_null("Skillbook")
