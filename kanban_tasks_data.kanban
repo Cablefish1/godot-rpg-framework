@@ -127,7 +127,7 @@
 		},
 		{
 			"uuid": "35b90727-d691-4115-bb66-35fcfc401623",
-			"title": "LEFT OFF: ChatGPT: Party member logic",
+			"title": "LEFT OFF: ChatGPT: Party member autoload",
 			"description": "",
 			"category": "6a7fd4c0-fde7-4917-86e4-650ca922472b",
 			"steps": []

@@ -1,3 +1,4 @@
+Node2D
 Node
 Marker2D
 Sprite2D
@@ -6,7 +7,6 @@ Entity
 Interactable
 ColorRect
 Panel
-Node2D
 PopupPanel
 VBoxContainer
 PanelContainer

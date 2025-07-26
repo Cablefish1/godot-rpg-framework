@@ -1,5 +1,2 @@
-res://Components/combat_encounter.tscn
-res://Components/combat_encounter.gd
-res://entities/party_character.tscn
-res://Globals/game_state.gd
-res://Globals/global_party_controller.gd
+res://UI/Game Screens/battle.tscn
+res://UI/Game Screens/party_slots.gd
